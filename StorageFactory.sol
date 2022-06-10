@@ -11,6 +11,7 @@ contract StorageFactory {
     // Also keeps a running list of our deployed SimpleStorage contracts
     function createSimpleStorageContract() public {
         SimpleStorage simpleStorage = new SimpleStorage();
+        simpleStorage.push(simpleStorage);
     }
 
 }
