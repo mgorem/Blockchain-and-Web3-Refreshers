@@ -1,0 +1,39 @@
+Nick Szabo-
+Smart Contracts: self executing sets of instructions, without third parties.
+-Oracles bring data into the blockchain, or execute some external type of computation.
+Therefore, blockchain can talk to the real world.
+-
+--- Basic Solidity Memory, Storage, and Calldata---
+- Places you can store data in solidity:
+	- Stack- 
+	---> Memory- Temporary vaariables that only exist during the transaction/ when function is called
+	---> Storage- Permanent variables that can be modified (stay in the blockchain forever)
+	---> Calldata- Temporary vaariables that only exist during the transaction/ when function is 
+	               called
+	- Code- 
+	- Logs- 
+- Structs mappings and arrays (including strings which is an array of bytes) need to be given the memory
+  or calldata keyword.
+- EVM compatible blockchains- you can deploy solidity smart contracts in them. e.g Avalanche, Phantom,
+  Polygon
+- Contract in solidity is similar to classes in other programming languages.
+- Types in Solidity:
+	- uint256
+	- string
+	- byte
+	- mapping
+	- address
+	- function
+	e.t.c
+- To create a new type, we can use a struct
+-----L3:Storage Factory----- // Contracts interacting with each other
+Learning Outcomes:
+- Deploying a SimpleStorage.sol contract that will deploy and interact with other contracts itself.
+- Importing
+- Inheritance e.t.c
+N/B A contract deploying other contracts for us and go ahead to interact with those contracts from other
+    contracts:
+- Compossability- The ability of smart contracts to interact with each other seamlessly
+	Use Case: DeFi- where finacial products interact with each other easily
+- A single file in solidity can hold multiple contracts
+- 
