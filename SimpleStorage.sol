@@ -20,7 +20,7 @@ contract SimpleStorage {
 
     uint256 public favoriteNumber; // unsigned intenger of size 256 bits
 
-    // Structs- Ways to defin new types in solidity(like creating new objects)
+    // Structs- Ways to define new types in solidity(like creating new objects)
     // A struct of type People to store a favorite number associated with certain people
      struct People {
          uint256 favoriteNumber;
