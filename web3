@@ -36,4 +36,16 @@ N/B A contract deploying other contracts for us and go ahead to interact with th
 - Compossability- The ability of smart contracts to interact with each other seamlessly
 	Use Case: DeFi- where finacial products interact with each other easily
 - A single file in solidity can hold multiple contracts
+
+---Chainlink---
+- A technology for doing external computation in a decentralised context for our smart contracts.
+- Chainlink Data Feeds: Data feeds or price feeds are ways to read pricing information or other 
+  pieces of data from the real world or other pieces of data that are already aggregated and 
+  decentralised for us.
+- Chainlink VRF - A way to get random numbers from the real world into our smart contract
+- Chainlink Keepers: Way to do decentralised event driven computation.
+  --If a certain trigger hits, do something. Define what the trigger is(sell eth) and what
+    to do something is(trade).
+- Chainlink APIs: Allow us to connect to many things on the planet. (We have to configure it ourselves
+                  as devs unlike the above keepers, vrf and feeds).
 - 
