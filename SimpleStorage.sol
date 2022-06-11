@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.6.0; //Solidity Version
+pragma solidity ^0.8.0; //Solidity Version
 
 // Defining a contract and types, visibility e.t.c
 // Same to a class in Java
@@ -49,7 +49,7 @@ contract SimpleStorage {
     //functions/methods- self-contained modules that will execute some task for us
     //function that stores the value of favoriteNumber and changes its value
 
-    function store(uint256 _favoriteNumber) public {
+    function store(uint256 _favoriteNumber) public virtual {
         favoriteNumber = _favoriteNumber;
     }
     
