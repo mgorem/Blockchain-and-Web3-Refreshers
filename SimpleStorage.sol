@@ -61,9 +61,9 @@ contract SimpleStorage {
     }
 
     // 2.Pure- Functions that purely do some type of math
-    function doMath() public view {
-        favoriteNumber + favoriteNumber;
-    }
+    // function doMath() public view {
+    //     favoriteNumber + favoriteNumber;
+    // }
 
     // Function to add a person in the Dynamic Array
     function addPerson(string memory _name, uint256 _favoriteNumber) public {

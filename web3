@@ -48,4 +48,6 @@ N/B A contract deploying other contracts for us and go ahead to interact with th
     to do something is(trade).
 - Chainlink APIs: Allow us to connect to many things on the planet. (We have to configure it ourselves
                   as devs unlike the above keepers, vrf and feeds).
+- To use the data feeds you can import form github and npm or copy paste the various contract with 
+  specific functions needed.
 - 
