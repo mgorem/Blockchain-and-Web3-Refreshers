@@ -2,52 +2,69 @@ Nick Szabo-
 Smart Contracts: self executing sets of instructions, without third parties.
 -Oracles bring data into the blockchain, or execute some external type of computation.
 Therefore, blockchain can talk to the real world.
--
---- Basic Solidity Memory, Storage, and Calldata---
+
+- --- Basic Solidity Memory, Storage, and Calldata---
 - Places you can store data in solidity:
-	- Stack- 
-	---> Memory- Temporary vaariables that only exist during the transaction/ when function is called
-	---> Storage- Permanent variables that can be modified (stay in the blockchain forever)
-	---> Calldata- Temporary vaariables that only exist during the transaction/ when function is 
-	               called
-	- Code- 
-	- Logs- 
+  - Stack-
+    ---> Memory- Temporary vaariables that only exist during the transaction/ when function is called
+    ---> Storage- Permanent variables that can be modified (stay in the blockchain forever)
+    ---> Calldata- Temporary vaariables that only exist during the transaction/ when function is
+    called
+  - Code-
+  - Logs-
 - Structs mappings and arrays (including strings which is an array of bytes) need to be given the memory
   or calldata keyword.
 - EVM compatible blockchains- you can deploy solidity smart contracts in them. e.g Avalanche, Phantom,
   Polygon
 - Contract in solidity is similar to classes in other programming languages.
 - Types in Solidity:
-	- uint256
-	- string
-	- byte
-	- mapping
-	- address
-	- function
-	e.t.c
+  - uint256
+  - string
+  - byte
+  - mapping
+  - address
+  - function
+    e.t.c
 - To create a new type, we can use a struct
------L3:Storage Factory----- // Contracts interacting with each other
-Learning Outcomes:
+  -----L3:Storage Factory----- // Contracts interacting with each other
+  Learning Outcomes:
 - Deploying a SimpleStorage.sol contract that will deploy and interact with other contracts itself.
 - Importing
 - Inheritance e.t.c
-N/B A contract deploying other contracts for us and go ahead to interact with those contracts from other
-    contracts:
+  N/B A contract deploying other contracts for us and go ahead to interact with those contracts from other
+  contracts:
 - Compossability- The ability of smart contracts to interact with each other seamlessly
-	Use Case: DeFi- where finacial products interact with each other easily
+  Use Case: DeFi- where finacial products interact with each other easily
 - A single file in solidity can hold multiple contracts
 
 ---Chainlink---
+
 - A technology for doing external computation in a decentralised context for our smart contracts.
-- Chainlink Data Feeds: Data feeds or price feeds are ways to read pricing information or other 
-  pieces of data from the real world or other pieces of data that are already aggregated and 
+- Chainlink Data Feeds: Data feeds or price feeds are ways to read pricing information or other
+  pieces of data from the real world or other pieces of data that are already aggregated and
   decentralised for us.
 - Chainlink VRF - A way to get random numbers from the real world into our smart contract
 - Chainlink Keepers: Way to do decentralised event driven computation.
   --If a certain trigger hits, do something. Define what the trigger is(sell eth) and what
-    to do something is(trade).
+  to do something is(trade).
 - Chainlink APIs: Allow us to connect to many things on the planet. (We have to configure it ourselves
-                  as devs unlike the above keepers, vrf and feeds).
-- To use the data feeds you can import form github and npm or copy paste the various contract with 
+  as devs unlike the above keepers, vrf and feeds).
+- To use the data feeds you can import form github and npm or copy paste the various contract with
   specific functions needed.
-- 
+- ----- L5 -----
+  Ethers.js
+- Helps us interact with our contracts
+
+NB-----
+
+- Synchronous Programming: Code executed one line after
+  another
+- JavaScript can be asynchronous: We can have code running
+  at the same time. (Doing stuff without waiting for something to finish).
+- Functions with somethig to wait before proceeding are
+  called promises. They can be:
+  -pending
+  -fulfilled
+  -rejected.
+
+  - You can set the promise to wait or continue executing.
