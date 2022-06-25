@@ -1,7 +1,7 @@
 async function main() {
-  await cookPopcorn(); // Promise-based function, don't move on until it is fulfilled
-  await pourDrinks();
-  startMovie();
+  // compile contracts in our code
+  // compile our contracts seperately using solcjs command
+  // solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol
 }
 
 main()
