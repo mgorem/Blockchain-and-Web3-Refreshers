@@ -54,6 +54,8 @@ Therefore, blockchain can talk to the real world.
 - ----- L5 -----
   Ethers.js
 - Helps us interact with our contracts
+- One of the most popular JS based tooling kits that allows
+  us to interact with different blockchains.
 
 NB-----
 
