@@ -13,6 +13,8 @@ contract SimpleStorage {
 
     uint256 public favoriteNumber; //gets initialised to zero
 
+    mapping(string => uint256) public nameToFavoriteNumber;
+
     // using our people object
     People[] public people;
 
@@ -25,7 +27,6 @@ contract SimpleStorage {
     // Basic Solidity Functions
     function store(uint256 _favoriteNumber) public {
         favoriteNumber = _favoriteNumber;
-        uint256 testVar = 5;
     }
 
     function retrieve() public view returns (uint256) {
@@ -34,5 +35,8 @@ contract SimpleStorage {
 
     function addPerson(string memory _name, uint256 _favoriteNumber) public {
         people.push(People(_favoriteNumber, _name));
+
+        // adding people to our mapping
+        nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 }
